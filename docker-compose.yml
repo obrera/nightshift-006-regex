@@ -1,0 +1,13 @@
+services:
+  web:
+    image: beeman/static-server:latest
+    volumes:
+      - ./dist:/workspace/app:ro
+    ports:
+      - "9010:9876"
+    environment:
+      - SPA=true
+  www:
+    image: beeman/static-server:latest
+    environment:
+      - REDIRECT_URL=https://regex.colmena.dev
