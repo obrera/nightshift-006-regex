@@ -1,10 +1,6 @@
 services:
   regex-web:
-    image: beeman/static-server:latest
-    volumes:
-      - ./dist:/workspace/app:ro
-    environment:
-      - SPA=true
+    build: .
     networks:
       - dokploy-network
   regex-www:
