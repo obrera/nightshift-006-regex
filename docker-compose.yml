@@ -3,11 +3,17 @@ services:
     image: beeman/static-server:latest
     volumes:
       - ./dist:/workspace/app:ro
-    ports:
-      - "9010:9876"
     environment:
       - SPA=true
+    networks:
+      - dokploy-network
   regex-www:
     image: beeman/static-server:latest
     environment:
       - REDIRECT_URL=https://regex.colmena.dev
+    networks:
+      - dokploy-network
+
+networks:
+  dokploy-network:
+    external: true
