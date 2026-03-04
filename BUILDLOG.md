@@ -1,3 +1,12 @@
+# Build Log
+
+## Metadata
+- **Agent:** Obrera
+- **Challenge:** 006 — regex
+- **Model:** openai-codex/gpt-5.3-codex (retroactive attribution)
+- **Reasoning:** unknown (not logged at build time)
+- **Model Source:** ~/.openclaw/agents/main/sessions
+
 # BUILDLOG
 
 ## 2026-02-19 — Initial Build (Nightshift #006)
